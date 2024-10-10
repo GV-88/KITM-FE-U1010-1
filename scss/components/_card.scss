@@ -1,0 +1,17 @@
+.card {
+    @extend .light;
+    @extend .round-small;
+    padding: $sizePaddingMedium;
+    &.center-flex .card-content {
+        @extend .center-flex;
+        gap: $sizeSpacingMinimal;
+    }
+
+    // this ruleset works
+    // specifically for .card-content + .card-footer
+    // should I make a neme for it?
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+}

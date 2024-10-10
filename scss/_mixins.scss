@@ -1,0 +1,17 @@
+@mixin gradient($color1, $color2) {
+    background: linear-gradient(60deg, $color1, $color2);
+}
+
+@mixin round($radius) {
+    border-radius: $radius;
+}
+
+@mixin textColors($foreground, $background) {
+    color: $foreground;
+    background-color: $background;
+}
+
+@mixin resetLinkStyle($foregroundColor) {
+    text-decoration: none;
+    color: $foregroundColor;
+}

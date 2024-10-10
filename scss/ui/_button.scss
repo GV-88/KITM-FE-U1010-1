@@ -1,0 +1,16 @@
+.btn {
+    border: none;
+    text-align: center;
+    padding: $sizePaddingSmall;
+    font-weight: 500;
+    @extend .round-large;
+    &-block {
+        @extend .btn;
+        display: block;
+        align-self: stretch;
+    }
+}
+
+button {
+    @extend .btn;
+}

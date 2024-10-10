@@ -1,0 +1,24 @@
+form {
+    & button {
+        @extend .primary;
+        @extend .primary-gradient;
+        text-transform: uppercase;
+    }
+    & fieldset {
+        padding: 0;
+        border: none;
+    }
+    &.fullwidth 
+    {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: stretch;
+        text-align: start;
+        gap: $sizeSpacingMinimal;
+        & button {
+            @extend .btn-block;
+        }
+    }
+
+}
+

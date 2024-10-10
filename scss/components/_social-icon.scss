@@ -1,0 +1,27 @@
+.social-icon {
+    @include textColors($colorForegroundOnDark, $colorPrimary);
+    @extend .round-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc($sizeRoundLarge * 2);
+    height: calc($sizeRoundLarge * 2);
+    // padding: $sizePaddingMinimal;
+    padding: 0;
+    &-fb {
+        @extend .social-icon;
+        background-color: #1f27a1;
+    }
+    &-twitter {
+        @extend .social-icon;
+        background-color: #0dabf5;
+    }
+    &-google {
+        @extend .social-icon;
+        background-color: #be3631;
+    }
+}
+
+a.social-icon {
+    @include resetLinkStyle($colorForegroundOnDark);
+}

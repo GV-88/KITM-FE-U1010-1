@@ -1,0 +1,52 @@
+.light {
+    @include textColors($colorForegroundOnLight, $colorBackgroundLight)
+}
+
+.primary {
+    @include textColors($colorForegroundOnDark, $colorPrimary);
+    &-gradient {
+        @include gradient($colorPrimary, $colorSecondary)
+    }
+}
+
+.round {
+    @include round($sizeRoundDefault);
+    &-large {
+        @include round($sizeRoundLarge);
+    }
+    &-small {
+        @include round($sizeRoundSmall);
+    }
+}
+
+.fullsize {
+    min-width: 100%;
+    min-height: 100%;
+    &-screen {
+        min-height: 100vh;
+    }
+}
+
+.center {
+    text-align: center;
+    &-flex {
+        @extend .center;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+}
+
+.row-list {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: $sizeSpacingMinimal;
+}
+
+.content-stretch-vertical {
+    @extend .center-flex;
+    justify-content: stretch;
+    & > * {
+        flex-grow: 1;
+    }
+}

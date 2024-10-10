@@ -1,0 +1,28 @@
+// Colors
+$colorPrimary: #0cf;
+$colorSecondary: rgb(204, 0, 255);
+$colorForegroundOnDark: #fff;
+
+$colorBackgroundLight: #fff;
+$colorForegroundOnLight: #000;
+$colorGreyOnLight: #bbb;
+
+// Sizes
+$sizeRoundDefault: 50%;
+$sizeRoundSmall: 0.5rem;
+$sizeRoundLarge: 1rem;
+//TODO: use "global roundness" to define the roundness of all buttons and icons
+
+//TODO: system for responsive spacing and sizing
+$sizeSpacingMinimal: 0.25rem;
+$sizePaddingMinimal: 0.25rem;
+$sizeSpacingSmall: 0.5rem;
+$sizePaddingSmall: 0.5rem;
+$sizePaddingMedium: 1rem;
+$sizeSpacingMedium: 1rem;
+$sizePaddingLarge: 2rem;
+$sizePaddingXXL: 4rem;
+
+$sizeFontSmall: smaller;
+
+$sizeLineThin: 2px;

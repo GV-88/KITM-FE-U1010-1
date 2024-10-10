@@ -1,0 +1,23 @@
+@import 'var';
+@import 'mixins';
+
+@import 'ui/utilities';
+@import 'ui/button';
+@import 'ui/input';
+
+@import 'components/social-icon';
+@import 'components/form';
+@import 'components/card';
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body > .container {
+    padding: $sizePaddingXXL;
+}

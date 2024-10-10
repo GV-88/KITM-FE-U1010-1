@@ -1,0 +1,36 @@
+.inputbox {
+    input {
+        &[type="text"], &[type="password"] {
+            border-style: none;
+            border-bottom: solid $sizeLineThin $colorGreyOnLight;
+            &::before {
+                color: $colorGreyOnLight;
+            }
+        }
+        &[name="username"]::before {
+            content: '*';
+        }
+        &[name="password"]::before {
+            content: '*';
+        }
+    }
+
+    label, .input-helper {
+        font-size: $sizeFontSmall;
+    }
+    .input-helper {
+        text-align: right;
+    }
+
+    min-width: 20em;
+    margin-bottom: $sizeSpacingSmall;
+}
+
+.fullwidth {
+    .inputbox {
+        input {
+            display: block;
+            width: 100%;
+        }
+    }
+}
